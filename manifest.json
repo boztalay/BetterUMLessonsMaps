@@ -1,0 +1,16 @@
+{
+	"name" : "Better UM Lessons Maps",
+	"description" : "https://github.com/boztalay/BetterUMLessonsMaps",
+	"version" : "1",
+	"manifest_version" : 2,
+	"content_scripts" : [
+		{
+			"matches" : ["https://lessons.ummu.umich.edu/2k/utilize/reader/map_tutorials/*", "http://lessons.ummu.umich.edu/2k/utilize/reader/map_tutorials/*"],
+			"js" : ["fix_question_screen.js"]
+		},
+		{
+			"matches" : ["https://lessons.ummu.umich.edu/2k/utilize/update/map_tutorials/*", "http://lessons.ummu.umich.edu/2k/utilize/update/map_tutorials/*"],
+			"js" : ["fix_feedback_screen.js"]
+		}
+	]
+}

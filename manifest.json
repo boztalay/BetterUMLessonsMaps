@@ -5,11 +5,13 @@
 	"manifest_version" : 2,
 	"content_scripts" : [
 		{
-			"matches" : ["https://lessons.ummu.umich.edu/2k/utilize/reader/map_tutorials/*", "http://lessons.ummu.umich.edu/2k/utilize/reader/map_tutorials/*"],
+			"matches" : ["https://lessons.ummu.umich.edu/2k/utilize/reader/map*",
+				     "http://lessons.ummu.umich.edu/2k/utilize/reader/map*"],
 			"js" : ["fix_question_screen.js"]
 		},
 		{
-			"matches" : ["https://lessons.ummu.umich.edu/2k/utilize/update/map_tutorials/*", "http://lessons.ummu.umich.edu/2k/utilize/update/map_tutorials/*"],
+			"matches" : ["https://lessons.ummu.umich.edu/2k/utilize/update/map*",
+				     "http://lessons.ummu.umich.edu/2k/utilize/update/map*"],
 			"js" : ["fix_feedback_screen.js"]
 		}
 	]
